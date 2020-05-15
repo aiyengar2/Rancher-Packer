@@ -12,3 +12,9 @@ variables.json
 
 # Downloaded iso's
 *.iso
+
+# Vagrant
+.vagrant/
+Vagrantfile
+
+.DS_Store

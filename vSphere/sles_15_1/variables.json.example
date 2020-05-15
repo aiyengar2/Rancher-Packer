@@ -1,12 +1,18 @@
 {
+    "_README": "Place your SLES DVD1 ISO in packer_cache/. Fill in the filename in iso_name.",
     "vcenter_server":"",
-    "username":"administrator@vsphere.local",
-    "password":"",
+    "username":"{{ env `VSPHERE_USERNAME` }}",
+    "password":"{{ env `VSPHERE_PASSWORD` }}",
+    "datacenter": "",
     "datastore":"",
     "folder": "",
-    "host":"",
     "cluster": "",
+    "resource_pool": "",
     "network": "",
     "ssh_username": "packerbuilt",
-    "ssh_password": "PackerBuilt!"
+    "ssh_password": "PackerBuilt!",
+    "iso_name": "",
+    "iso_checksum": "",
+    "iso_checksum_type": "",
+    "autoinst_cfg": "autoinst.xml"
 }
